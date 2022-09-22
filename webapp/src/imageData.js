@@ -2,6 +2,7 @@ export const data = [
   {
     id: 1,
     img: 'images/5a154a1d1e9403e6c9a4b728ed9d2d6d3187f1ff_FB710_preview_400px.jpeg',
+    img2: 'images/0ef06cab52097ca5d97e419f35d0b0d979750031_DB3001_inspiration.jpeg',
     model: 'Dubbelkrok',
     brand: 'HOME',
     color: 'Svart',
@@ -10,6 +11,7 @@ export const data = [
   {
     id: 2,
     img: 'images/62a6f2da47fcab1410b02a196c016c9039ca09f1_HB361_preview_400px.jpeg',
+    img2: 'images/0ef06cab52097ca5d97e419f35d0b0d979750031_DB3001_inspiration.jpeg',
     model: 'Dubbelkrok',
     brand: 'HOME',
     color: 'Svart',
@@ -18,6 +20,7 @@ export const data = [
   {
     id: 3,
     img: 'images/90f309e42a12d71d77d421f44b23b122568bbb97_HB356_preview_400px.jpeg',
+    img2: 'images/0ef06cab52097ca5d97e419f35d0b0d979750031_DB3001_inspiration.jpeg',
     model: 'Dubbelkrok',
     brand: 'HOME',
     color: 'Svart',
@@ -26,6 +29,7 @@ export const data = [
   {
     id: 4,
     img: 'images/b0ed1250f8bbc119f25089b5488b6bf97692dcca_DB3001_preview_400px.jpeg',
+    img2: 'images/0ef06cab52097ca5d97e419f35d0b0d979750031_DB3001_inspiration.jpeg',
     model: 'Dubbelkrok',
     brand: 'HOME',
     color: 'Svart',
@@ -34,6 +38,7 @@ export const data = [
   {
     id: 5,
     img: 'images/b1fb55a6235271928b71613dc675a24f780fde61_HB341_preview_400px.jpeg',
+    img2: 'images/0ef06cab52097ca5d97e419f35d0b0d979750031_DB3001_inspiration.jpeg',
     model: 'Dubbelkrok',
     brand: 'HOME',
     color: 'Svart',
@@ -42,6 +47,7 @@ export const data = [
   {
     id: 6,
     img: 'images/5a154a1d1e9403e6c9a4b728ed9d2d6d3187f1ff_FB710_preview_400px.jpeg',
+    img2: 'images/0ef06cab52097ca5d97e419f35d0b0d979750031_DB3001_inspiration.jpeg',
     model: 'Dubbelkrok',
     brand: 'HOME',
     color: 'Svart',
@@ -50,6 +56,7 @@ export const data = [
   {
     id: 7,
     img: 'images/62a6f2da47fcab1410b02a196c016c9039ca09f1_HB361_preview_400px.jpeg',
+    img2: 'images/0ef06cab52097ca5d97e419f35d0b0d979750031_DB3001_inspiration.jpeg',
     model: 'Dubbelkrok',
     brand: 'HOME',
     color: 'Svart',
@@ -58,6 +65,7 @@ export const data = [
   {
     id: 8,
     img: 'images/90f309e42a12d71d77d421f44b23b122568bbb97_HB356_preview_400px.jpeg',
+    img2: 'images/0ef06cab52097ca5d97e419f35d0b0d979750031_DB3001_inspiration.jpeg',
     model: 'Dubbelkrok',
     brand: 'HOME',
     color: 'Svart',
@@ -66,6 +74,7 @@ export const data = [
   {
     id: 9,
     img: 'images/b0ed1250f8bbc119f25089b5488b6bf97692dcca_DB3001_preview_400px.jpeg',
+    img2: 'images/0ef06cab52097ca5d97e419f35d0b0d979750031_DB3001_inspiration.jpeg',
     model: 'Dubbelkrok',
     brand: 'HOME',
     color: 'Svart',
@@ -74,6 +83,7 @@ export const data = [
   {
     id: 10,
     img: 'images/b1fb55a6235271928b71613dc675a24f780fde61_HB341_preview_400px.jpeg',
+    img2: 'images/0ef06cab52097ca5d97e419f35d0b0d979750031_DB3001_inspiration.jpeg',
     model: 'Dubbelkrok',
     brand: 'HOME',
     color: 'Svart',

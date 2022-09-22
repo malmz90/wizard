@@ -17,90 +17,23 @@ const slideRight = () => {
   slider.scrollLeft = slider.scrollLeft + 500
 }
 function App() {
-  const settings = {
-    dots: true,
-    infinite: false,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 4,
-    initialSlide: 0,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 4,
-          slidesToScroll: 4,
-          infinite: true,
-          dots: true,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 4,
-          slidesToScroll: 4,
-          initialSlide: 2,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 4,
-          slidesToScroll: 4,
-        },
-      },
-    ],
-  }
+  const breakPoints = [
+    { width: 1, itemsToShow: 1 },
+    { width: 550, itemsToShow: 2, itemsToScroll: 2, pagination: false },
+    { width: 850, itemsToShow: 3 },
+    { width: 1150, itemsToShow: 4, itemsToScroll: 2 },
+    { width: 1450, itemsToShow: 4 },
+    { width: 1750, itemsToShow: 5 },
+  ]
+
   return (
-    <div className="App mt-20">
-      <Carousel>
+    <div className=" mt-80 px-14 ">
+      <h1 className="flex font-medium text-3xl justify-center mb-6">
+        UTVALDA PRODUKTER
+      </h1>
+      <Carousel breakPoints={breakPoints}>
         {data && data.map((item) => <Card item={item}></Card>)}
       </Carousel>
-      <Slider {...settings}>
-        {data &&
-          data.map((item) => (
-            <div className="card">
-              <div className="card-top">
-                <img src={item.img} alt="/" className="" />
-                <h1>title</h1>
-              </div>
-              <div className="card-bottom">
-                <h3>{item.price}</h3>
-                <p>Item nått</p>
-              </div>
-            </div>
-          ))}
-      </Slider>
-
-      <div className="mt-6">
-        <h1 className="font-semibold"> UTVALDA PRODUKTER</h1>
-        <div className="relative flex items-center">
-          <MdChevronLeft
-            className="opacity-50 cursor-pointer hover:opacity-100"
-            onClick={slideLeft}
-            size={40}
-          />
-          <div
-            id="slider"
-            className="w-full h-full overflow-x-scroll whitespace-nowrap scroll-smooth scrollbar-hide"
-          >
-            {data &&
-              data.map((item) => (
-                <img
-                  className="inline-block p-2 cursor-pointer hover:scale-105 ease-in-out duration-300"
-                  src={item.img}
-                  alt="/"
-                />
-              ))}
-          </div>
-
-          <MdChevronRight
-            className="opacity-50 cursor-pointer hover:opacity-100"
-            onClick={slideRight}
-            size={40}
-          />
-        </div>
-      </div>
     </div>
   )
 }
