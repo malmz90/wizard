@@ -3,10 +3,42 @@ body {
 
 }
 
+.rec-dot_active {
+  background-color: rgb(100, 101, 101)!important;
+  box-shadow: 0 0 1px 3px rgb(111, 111, 111)!important;
+}
+
+.rec-dot:focus,
+.rec-dot:hover {
+  box-shadow: 0 0 1px 3px rgb(160, 160, 160)!important;
+}
+
+.rec-dot_active:focus,
+.rec-dot_active:hover {
+  background-color: rgb(111, 110, 110) !important;
+  box-shadow: 0 0 1px 3px rgb(106, 105, 105) !important;
+}
+
+.rec-arrow {
+
+  background-color: rgb(63, 62, 62) !important;
+  transition: all 0.3s ease;
+  font-size: 1.1rem !important;
+  color: white !important;
+  width: 1.7rem !important;
+  height: 1.7rem !important;
+  min-width: 1.7rem !important;
+  line-height: 1.7rem !important;
+
+}
+
+.rec-arrow:hover:not(:disabled) {
+  transform: scale(1.2);
+}
 
 .wrapper {
   width: 100vw;
-  height: 20vh;
+  height: 25vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -27,13 +59,11 @@ body {
   display: flex;
   align-items: center;
   animation: slideshow 8s linear infinite;
-  width: 300px;
 }
 
 .slide img {
   height: 70px;
   padding: 0 30px 0 30px;
-  
 }
 
 @keyframes slideshow {
