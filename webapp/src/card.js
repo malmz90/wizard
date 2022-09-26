@@ -29,6 +29,7 @@ const Card = ({ item }) => {
         alt=""
       />
       <div className=" justify-start">
+        <div className="">HB341</div>
         <div className="mt-3 font-semibold text-xl">{item.model}</div>
         <div className="text-sm">{item.brand}</div>
         <div className="flex justify-between">
